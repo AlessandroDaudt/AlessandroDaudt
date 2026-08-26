@@ -7,6 +7,7 @@
 Building practical systems that make repetitive work easier to run, inspect, and improve.
 
 [![GitHub](https://img.shields.io/badge/GitHub-AlessandroDaudt-181717?style=for-the-badge&logo=github)](https://github.com/AlessandroDaudt)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Alessandro_Daudt-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alessandrodaudt/)
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
@@ -53,7 +54,7 @@ My approach is simple:
 
 ## Find me
 
-The best place to start is the [repository list](https://github.com/AlessandroDaudt?tab=repositories). For a visual overview, see the [portfolio landing page source](https://github.com/AlessandroDaudt/AlessandroDaudt).
+The best place to start is the [repository list](https://github.com/AlessandroDaudt?tab=repositories). You can also connect on [LinkedIn](https://www.linkedin.com/in/alessandrodaudt/) or see the [portfolio landing page source](https://github.com/AlessandroDaudt/AlessandroDaudt).
 
 <div align="center">
 
