@@ -42,7 +42,7 @@ O perfil já apresenta um eixo técnico coerente: automação, ferramentas locai
 ## Entregas desta pasta
 
 - `index.html`, `styles.css` e `script.js`: landing page responsiva para portfólio/CV.
-- `translated-readmes/`: traduções completas dos READMEs em português.
+- `translated-readmes/`: cópias locais das traduções em inglês que já foram publicadas.
 - `translated-readmes/README.md`: índice de status por repositório.
 
-Os arquivos de tradução são cópias locais. Eles podem ser revisados e depois copiados para os repositórios correspondentes antes de um commit/push.
+Os arquivos locais preservam as versões publicadas para revisão e histórico.
