@@ -18,6 +18,7 @@ I build practical tools for real operational problems — especially the repetit
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
+[![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)](https://www.ansible.com/)
 
 </div>
 
@@ -40,8 +41,8 @@ When I build something, I try to:
 
 | Project | The idea behind it |
 | --- | --- |
-| [Defender Graph API Toolkit](https://github.com/AlessandroDaudt/MicrosoftGraphAPI-TroubleshootingTool) | I built this PowerShell GUI to make Microsoft Graph and Defender XDR authentication problems easier to see and explain. It keeps Graph and Defender tokens separate, supports Advanced Hunting and Live Response, and produces sanitized diagnostics. |
 | [SANFlow Dell](https://github.com/AlessandroDaudt/Dell-PPDM-PowerStore) | A Python/FastAPI control plane for a full SAN workflow: Dell PowerStore LUNs, physical-host presentation, Brocade Fabric OS REST/YANG zoning, and Dell PowerProtect Data Manager policies. It uses a responsive SPA, SQLite audit state, Docker, Ansible, dry-run execution, and guarded progressive changes. |
+| [Defender Graph API Toolkit](https://github.com/AlessandroDaudt/MicrosoftGraphAPI-TroubleshootingTool) | I built this PowerShell GUI to make Microsoft Graph and Defender XDR authentication problems easier to see and explain. It keeps Graph and Defender tokens separate, supports Advanced Hunting and Live Response, and produces sanitized diagnostics. |
 | [Local Code AI](https://github.com/AlessandroDaudt/quantizedLLM) | My take on a local-first coding assistant: FastAPI, REST/SSE, React, VS Code, local RAG, controlled agents, and PowerShell operations — with the code and models staying on the user's machine. |
 | [Autopilot Job Hunt](https://github.com/AlessandroDaudt/buscadorvagas) | A private, local-first workflow for finding and reviewing job opportunities without turning the process into a black box. It combines explainable scoring, Ollama-assisted review, SQLite, and allowlisted connectors. |
 | [TaskFlow CI/CD Lab](https://gitlab.com/daudtalessandro/taskflow-cicd-lab) | A hands-on lab where I connect a TypeScript/React application, an Express REST API, PostgreSQL, Redis workers, Docker, and a complete GitLab CI/CD flow. |
@@ -58,6 +59,8 @@ When I build something, I try to:
 **Provision** · Terraform · Ansible · AWS · Azure · Helm · Entra ID · FinOps<br>
 **Integrate** · Microsoft Graph · Defender XDR · KQL · Dell PowerStore · PowerProtect Data Manager · Brocade Fabric OS REST/YANG · OpenAPI<br>
 **Operate** · PostgreSQL · SQLite · Redis · Ollama · llama.cpp · RAG · Linux · Nginx · Datadog
+
+**SANFlow Dell stack** · Python · FastAPI · Docker · SQLite · Ansible · PowerStore · PPDM · Brocade FOS REST/YANG · OpenAPI
 
 ## What matters to me
 
