@@ -2,9 +2,9 @@
 
 # Alessandro Daudt
 
-### Automation · cloud infrastructure · developer tooling
+### Automation · APIs · cloud infrastructure · local AI
 
-Building practical systems that make repetitive work easier to run, inspect, and improve.
+I build practical tools for real operational problems — especially the repetitive, hard-to-debug kind.
 
 [![GitHub](https://img.shields.io/badge/GitHub-AlessandroDaudt-181717?style=for-the-badge&logo=github)](https://github.com/AlessandroDaudt)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Alessandro_Daudt-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alessandrodaudt/)
@@ -23,51 +23,53 @@ Building practical systems that make repetitive work easier to run, inspect, and
 
 ---
 
-## About
+## Hi, I'm Alessandro
 
-I explore the space where software meets operations: local-first automation, secure interfaces, containers, cloud-native workflows, and developer tools with a clear path from first run to production.
+I enjoy taking something that is slow, confusing, or full of manual steps and turning it into a tool that is easier to run and understand. Most of my projects start with a simple question: **can I make this easier to diagnose, safer to operate, and simpler for the next person to maintain?**
 
-My approach is simple:
+That usually leads me to PowerShell, Python, REST APIs, containers, cloud infrastructure, or local AI. I use the technology that fits the problem — not just the one that makes the stack look bigger.
 
-- automate the repeatable work;
-- prefer explicit configuration and safe defaults;
-- make systems observable and easy to hand over;
-- document the trade-offs, not only the happy path.
+When I build something, I try to:
 
-## Selected work
+- automate the work nobody should have to repeat by hand;
+- keep configuration clear and defaults safe;
+- leave enough visibility to understand what the system is doing;
+- write the documentation I would want to find when something breaks.
 
-| Project | What it demonstrates |
+## Projects I've been working on
+
+| Project | The idea behind it |
 | --- | --- |
-| [Defender Graph API Toolkit](https://github.com/AlessandroDaudt/MicrosoftGraphAPI-TroubleshootingTool) | PowerShell GUI for app-only authentication diagnostics, Microsoft Graph Security, Advanced Hunting, Defender Live Response, sanitized reporting, and multi-cloud endpoints. |
-| [Local Code AI](https://github.com/AlessandroDaudt/quantizedLLM) | Local-first coding platform with a FastAPI REST/SSE API, React, VS Code integration, local RAG, controlled agents, and PowerShell operations. |
-| [Autopilot Job Hunt](https://github.com/AlessandroDaudt/buscadorvagas) | Local-first job discovery with FastAPI workflows, explainable scoring, Ollama-assisted review, allowlisted connectors, SQLite, and PowerShell operations. |
-| [TaskFlow CI/CD Lab](https://gitlab.com/daudtalessandro/taskflow-cicd-lab) | TypeScript/React monorepo with an Express REST API, PostgreSQL, Redis workers, Docker, and staged GitLab CI/CD. |
-| [Intelbras Gatehouse](https://github.com/AlessandroDaudt/portaria_condominio) | Flask application for cameras and JSON-RPC gate control with authorization, snapshots, event logs, and local computer vision. |
-| [Valheim Control Plane](https://github.com/AlessandroDaudt/valheimserver-docker) | Docker Compose operations interface with HTTPS, live map, backups, player lists, users, configuration, and audit logs. |
-| [Kubernetes Test Lab](https://github.com/AlessandroDaudt/lab-k8s) | Node.js + PostgreSQL on Kubernetes with Deployments, StatefulSets, probes, persistence, and Kustomize. |
-| [DevOps Automation Labs](https://github.com/AlessandroDaudt/devops_automation) | Course fork covering Terraform, Ansible, AWS/Azure, GitHub Actions, Kubernetes, Datadog, Python, AI operations, and FinOps. |
-| [ApplyPilot](https://github.com/AlessandroDaudt/ApplyPilot) | Open-source fork explored as an AI-assisted job application workflow with discovery, tailoring, and browser automation. |
+| [Defender Graph API Toolkit](https://github.com/AlessandroDaudt/MicrosoftGraphAPI-TroubleshootingTool) | I built this PowerShell GUI to make Microsoft Graph and Defender XDR authentication problems easier to see and explain. It keeps Graph and Defender tokens separate, supports Advanced Hunting and Live Response, and produces sanitized diagnostics. |
+| [Local Code AI](https://github.com/AlessandroDaudt/quantizedLLM) | My take on a local-first coding assistant: FastAPI, REST/SSE, React, VS Code, local RAG, controlled agents, and PowerShell operations — with the code and models staying on the user's machine. |
+| [Autopilot Job Hunt](https://github.com/AlessandroDaudt/buscadorvagas) | A private, local-first workflow for finding and reviewing job opportunities without turning the process into a black box. It combines explainable scoring, Ollama-assisted review, SQLite, and allowlisted connectors. |
+| [TaskFlow CI/CD Lab](https://gitlab.com/daudtalessandro/taskflow-cicd-lab) | A hands-on lab where I connect a TypeScript/React application, an Express REST API, PostgreSQL, Redis workers, Docker, and a complete GitLab CI/CD flow. |
+| [Intelbras Gatehouse](https://github.com/AlessandroDaudt/portaria_condominio) | A Flask application that brings cameras, JSON-RPC gate control, snapshots, event logs, authorization, and local computer vision into one operational interface. |
+| [Valheim Control Plane](https://github.com/AlessandroDaudt/valheimserver-docker) | A web control plane for running a Valheim server without treating Docker Compose like the user interface. It includes HTTPS, a live map, backups, players, users, configuration, and audit logs. |
+| [Kubernetes Test Lab](https://github.com/AlessandroDaudt/lab-k8s) | A compact lab I use to make Kubernetes concepts concrete: a Node.js API, PostgreSQL, Deployments, StatefulSets, probes, persistent storage, and Kustomize. |
+| [DevOps Automation Labs](https://github.com/AlessandroDaudt/devops_automation) | My study fork for testing ideas across Terraform, Ansible, AWS, Azure, GitHub Actions, Kubernetes, Datadog, Python, AI operations, and FinOps. |
+| [ApplyPilot](https://github.com/AlessandroDaudt/ApplyPilot) | An open-source fork I explored to understand a more complex AI-assisted job application workflow, from discovery and tailoring to browser automation. |
 
-## Toolkit
+## Tools I reach for
 
 **Build** · Python · PowerShell · TypeScript · JavaScript · React · Node.js · Flask · FastAPI · Express · REST · SSE<br>
 **Ship** · Docker · Docker Compose · Kubernetes · Kustomize · GitHub Actions · GitLab CI/CD<br>
 **Provision** · Terraform · Ansible · AWS · Azure · Helm · Entra ID · FinOps<br>
 **Operate** · PostgreSQL · SQLite · Redis · Ollama · llama.cpp · RAG · Linux · Nginx · Microsoft Graph · Defender XDR · KQL · Datadog
 
-## What I am exploring
+## What matters to me
 
-- automation that remains understandable after the demo;
-- infrastructure that can be tested locally and operated safely;
-- AI workflows with clear boundaries, local processing, and human review;
-- documentation as part of the product, not an afterthought.
+- Automation should still be understandable after the demo is over.
+- Infrastructure should be testable locally and predictable when it is time to operate it.
+- AI works better with clear boundaries, local processing where possible, and a human making the important decisions.
+- Documentation is part of the project. If someone cannot understand how it works or what can go wrong, it is not finished yet.
 
-## Find me
+## Let's connect
 
-The best place to start is the [repository list](https://github.com/AlessandroDaudt?tab=repositories). You can also connect on [LinkedIn](https://www.linkedin.com/in/alessandrodaudt/) or see the [portfolio landing page source](https://github.com/AlessandroDaudt/AlessandroDaudt).
+Take a look at my [repositories](https://github.com/AlessandroDaudt?tab=repositories) if you want to see how these ideas turn into code. You can also find me on [LinkedIn](https://www.linkedin.com/in/alessandrodaudt/).
 
 <div align="center">
 
-*Build something worth maintaining.*
+*Build it to work. Document it so someone else can keep it working.*
 
 </div>
