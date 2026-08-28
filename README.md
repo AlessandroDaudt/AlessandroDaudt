@@ -53,7 +53,7 @@ When I build something, I try to:
 | [ApplyPilot](https://github.com/AlessandroDaudt/ApplyPilot) | An open-source fork I explored to understand a more complex AI-assisted job application workflow, from discovery and tailoring to browser automation. |
 | [Ansible Platform Learning Project](https://github.com/AlessandroDaudt/ansible-scripts) | An explicit Ansible platform example for Debian-family Linux: security baseline, Nginx, a systemd-managed Python app, PostgreSQL, local and production inventories, Molecule, linting, tests, and GitHub Actions. |
 | [Terraform Azure — Hybrid Windows/Linux Lab](https://github.com/AlessandroDaudt/terraform-scripts) | A hub-and-spoke Azure lab with Windows and Linux VMs, VNets, NSGs, peering, Managed Identity, cloud-init, Azure Monitor, optional Bastion/VPN, PowerShell automation, and GitHub Actions validation. |
-| DumpCheck para Windows | A PowerShell toolkit for preparing WinDbg workstations, capturing crash or hang dumps, configuring WER LocalDumps, and producing reproducible, auditable triage reports with explicit safety boundaries. |
+| [DumpCheck for Windows](https://github.com/AlessandroDaudt/DumpCheckWinDBG) | A PowerShell toolkit for preparing WinDbg workstations, capturing crash or hang dumps, selecting a running process from a GUI, configuring WER LocalDumps, and producing reproducible, auditable triage reports with explicit safety boundaries. |
 
 ## Tools I reach for
 
