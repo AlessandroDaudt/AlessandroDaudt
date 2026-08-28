@@ -24,6 +24,18 @@
 
 This is a 100% practical, straight-to-the-point course focused on preparing professionals to automate infrastructure, pipelines, and cloud environments with the main tools used in the DevOps market.
 
+```mermaid
+flowchart LR
+    Start["00. Introduction"] --> Foundations["01. Git, Linux, and Vi"]
+    Foundations --> Containers["02. Docker and Compose"]
+    Containers --> Cloud["03–05. Cloud, Terraform,<br/>and CLI automation"]
+    Cloud --> Delivery["06–08. Ansible, CI/CD,<br/>and Kubernetes"]
+    Delivery --> Operations["09. Observability"]
+    Operations --> AI["10. AI for DevOps"]
+    AI --> Python["11. Python for DevOps"]
+    Python --> FinOps["12. FinOps<br/>AKS and EC2"]
+```
+
 ---
 
 ## Repository structure
@@ -231,6 +243,19 @@ This is a 100% practical, straight-to-the-point course focused on preparing prof
 
 ---
 
+### 12. FinOps for DevOps
+
+**Goal:** Measure waste and automate infrastructure savings.
+
+- Kubernetes right-sizing on AKS by comparing real usage with reserved resources
+- Diagnosis of `Pending` pods caused by oversized requests
+- Scheduled start and stop of EC2 environments with EventBridge Scheduler
+- **Hands-on labs:**
+  - Metrics-driven right-sizing for Kubernetes workloads
+  - Operating-hours automation for a staging EC2 instance
+
+---
+
 ## Target audience
 
 - IT professionals who want to move into DevOps
@@ -250,6 +275,7 @@ This is a 100% practical, straight-to-the-point course focused on preparing prof
 - **CI/CD:** GitHub Actions
 - **Orchestration:** Kubernetes (AKS), Helm, KEDA
 - **Observability:** Datadog
+- **FinOps:** AKS right-sizing, EC2, EventBridge Scheduler
 - **AI:** Gemini CLI, ChatGPT
 - **Languages:** Python, Shell Script
 

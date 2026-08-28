@@ -13,15 +13,15 @@ A local agent for job discovery, analysis, and application preparation. It reads
 
 ## Flow
 
-```text
-companies.json
-    → public registry/connector
-    → HTTPS + SSRF/robots/rate-limit/audit checks
-    → normalized and deduplicated job
-    → deterministic score
-    → structured Ollama adjustment (maximum ±10 per component)
-    → local JSON/SQLite
-    → local CSV + JSON + HTML + documents
+```mermaid
+flowchart LR
+    Config["companies.json<br/>allowlisted sources"] --> Registry["Public registry<br/>and connectors"]
+    Registry --> Network["HTTPS + controls<br/>SSRF, robots, rate limit and audit"]
+    Network --> Normalize["Normalization<br/>and deduplication"]
+    Normalize --> Score["Explainable<br/>deterministic score"]
+    Score --> Ollama["Local Ollama review<br/>bounded adjustment"]
+    Ollama --> Store["Local JSON<br/>and SQLite"]
+    Store --> Output["CSV + JSON + HTML<br/>and documents"]
 ```
 
 Implemented and tested connectors: Greenhouse, Lever, Ashby, SmartRecruiters, Workable, JSON-LD `JobPosting`, and generic static HTML. Playwright is not a required dependency.

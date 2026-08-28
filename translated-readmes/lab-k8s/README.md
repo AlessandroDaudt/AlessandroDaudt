@@ -8,22 +8,15 @@ The backend uses Node.js LTS, Express, and the `pg` driver. The frontend is plai
 
 The structure is split between `src/app.js` and `src/server.js`: `app.js` builds the application without opening a port, while `server.js` handles the initial connection, HTTP listener, and graceful shutdown. This makes unit tests faster and avoids requiring PostgreSQL during `npm test`.
 
-```text
-Browser
-    │  http://localhost:8080
-    ▼
-Service web:80
-    │
-    ├──► Pod web-1:3000 ─┐
-    └──► Pod web-2:3000 ─┤  Deployment (2 replicas)
-                         ▼
-                   Service postgres:5432
-                         │
-                         ▼
-                 Pod postgres-0
-                         │
-                         ▼
-              PVC postgres-data-postgres-0
+```mermaid
+flowchart TD
+    Browser["Browser<br/>localhost:8080"] --> WebService["web Service<br/>port 80"]
+    WebService --> Web1["web-1 Pod<br/>port 3000"]
+    WebService --> Web2["web-2 Pod<br/>port 3000"]
+    Web1 --> PostgresService["postgres Service<br/>port 5432"]
+    Web2 --> PostgresService
+    PostgresService --> PostgresPod["StatefulSet<br/>postgres-0"]
+    PostgresPod --> PVC["PVC<br/>postgres-data-postgres-0"]
 ```
 
 The browser talks only to the `web` Service. Application pods use the internal `postgres` DNS name to reach the database Service. The StatefulSet keeps the `postgres-0` identity and associates the persistent volume with the PVC.

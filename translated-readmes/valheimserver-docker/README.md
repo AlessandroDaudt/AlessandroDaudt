@@ -2,6 +2,19 @@
 
 Docker Compose project for running a dedicated Valheim server and an HTTPS web interface for operation, configuration, and user management.
 
+## System flow
+
+```mermaid
+flowchart LR
+    Admin["Administrator<br/>browser"] -->|HTTPS :8443| Panel["Flask panel<br/>operations and users"]
+    Panel --> Audit["SQLite<br/>accounts and audit"]
+    Panel -->|Docker Engine| Server["Valheim server<br/>dedicated container"]
+    Panel --> Backups["ZIP backups<br/>download and restore"]
+    Server --> World["Persistent world, lists<br/>and configuration"]
+    Players["Players<br/>UDP :2456-2458"] --> Server
+    Server -->|internal status| Panel
+```
+
 ## Requirements
 
 - Docker Desktop or Docker Engine with Docker Compose v2.24 or later;

@@ -12,6 +12,21 @@ Flask application for viewing Intelbras cameras, triggering gates through JSON-R
 - administrative logs and snapshots associated with gate actions;
 - Jinja frontend and a static frontend compatible with Nginx.
 
+## System flow
+
+```mermaid
+flowchart LR
+    Browser["Resident or administrator<br/>browser"] -->|HTTPS| Nginx["Nginx<br/>proxy and static files"]
+    Nginx --> Web["Flask web<br/>authentication and authorization"]
+    Web --> Database["PostgreSQL<br/>users, permissions and audit"]
+    Web --> Queue["Redis<br/>gate action queue"]
+    Queue --> GateWorker["Gate worker<br/>serialized execution"]
+    GateWorker -->|JSON-RPC| Device["Intelbras device<br/>cameras and gates"]
+    Monitor["Monitor and snapshots<br/>local services"] --> Device
+    Monitor --> Vision["Vision worker<br/>local detection"]
+    Vision --> Database
+```
+
 ## Requirements
 
 - Python 3.10 or later;
