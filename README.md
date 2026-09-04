@@ -20,8 +20,6 @@ I build practical tools for real operational problems — especially the repetit
 </div>
 ---
 
-> This profile README is written in English. Each linked repository keeps its own documentation language and project identity; the Computer Network Security course repository is intentionally documented in Portuguese.
-
 ## About me
 
 I turn slow, confusing, manual work into tools that are easier to run, diagnose, and maintain. My projects sit at the intersection of automation, APIs, cloud infrastructure, operational tooling, and local-first AI.
