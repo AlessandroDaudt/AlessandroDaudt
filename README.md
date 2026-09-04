@@ -2,7 +2,7 @@
 
 # Alessandro Daudt
 
-### Automation · APIs · cloud infrastructure · local AI
+### Automation · APIs · Cloud Infrastructure · Local AI
 
 I build practical tools for real operational problems — especially the repetitive, hard-to-debug kind.
 
@@ -10,71 +10,83 @@ I build practical tools for real operational problems — especially the repetit
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Alessandro_Daudt-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alessandrodaudt/)
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)](https://learn.microsoft.com/powershell/)
-[![REST API](https://img.shields.io/badge/REST_API-0B7285?style=for-the-badge&logo=fastapi&logoColor=white)](https://developer.mozilla.org/en-US/docs/Glossary/REST)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
-[![Microsoft Graph](https://img.shields.io/badge/Microsoft_Graph-5E5E5E?style=for-the-badge&logo=microsoft&logoColor=white)](https://learn.microsoft.com/graph/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
 [![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)](https://www.ansible.com/)
 
 </div>
-
 ---
 
-## Hi, I'm Alessandro
+> This profile README is written in English. Each linked repository keeps its own documentation language and project identity; the Computer Network Security course repository is intentionally documented in Portuguese.
 
-I enjoy taking something that is slow, confusing, or full of manual steps and turning it into a tool that is easier to run and understand. Most of my projects start with a simple question: **can I make this easier to diagnose, safer to operate, and simpler for the next person to maintain?**
+## About me
 
-That usually leads me to PowerShell, Python, REST APIs, containers, cloud infrastructure, or local AI. I use the technology that fits the problem — not just the one that makes the stack look bigger.
+I turn slow, confusing, manual work into tools that are easier to run, diagnose, and maintain. My projects sit at the intersection of automation, APIs, cloud infrastructure, operational tooling, and local-first AI.
 
-When I build something, I try to:
+I use the technology that fits the problem — not the technology that makes the stack look bigger. I care about safe defaults, useful diagnostics, reproducible workflows, and documentation that still helps when the demo is over.
 
-- automate the work nobody should have to repeat by hand;
-- keep configuration clear and defaults safe;
-- leave enough visibility to understand what the system is doing;
-- write the documentation I would want to find when something breaks.
+## Featured projects
 
-## Projects I've been working on
+| Project | Primary stack | What it does |
+| --- | --- | --- |
+| [San Flow](https://github.com/AlessandroDaudt/Dell-PPDM-PowerStore) | Python · FastAPI · Docker | Guarded end-to-end SAN control plane for Dell PowerStore LUNs, physical-host presentation, Brocade Fabric OS REST/YANG zoning, and Dell PowerProtect Data Manager policies. Dry-run is the default. |
+| [Local Code AI](https://github.com/AlessandroDaudt/quantizedLLM) | Python · TypeScript · PowerShell | Local-first coding assistant with a FastAPI API, React/Vite interface, VS Code extension, replaceable local model providers, indexing/RAG, and a controlled agent. |
+| [Generative Images Local Studio](https://github.com/AlessandroDaudt/Generative-images) | Python · JavaScript · Docker | Local NVIDIA GPU studio for image generation and editing that orchestrates ComfyUI through a web interface without a hosted inference API. |
+| [Autopilot Job Hunt](https://github.com/AlessandroDaudt/buscadorvagas) | Python · Ollama · Docker | Local-first job discovery and application-preparation workflow with allowlisted connectors, explainable scoring, Ollama-assisted review, and local reports. It does not submit applications automatically. |
+| [Defender Graph API Troubleshooting Tool](https://github.com/AlessandroDaudt/MicrosoftGraphAPI-TroubleshootingTool) | PowerShell · Microsoft Graph · Defender XDR | Windows GUI for diagnosing Graph Security and Defender for Endpoint access, with independent tokens, Advanced Hunting, Live Response, multi-cloud endpoints, and sanitized diagnostics. |
+| [Intelbras Gatehouse](https://github.com/AlessandroDaudt/portaria_condominio) | Python · Flask · JavaScript | Operational interface for Intelbras cameras and JSON-RPC gate control, with snapshots, authentication, authorization, event logs, and local computer vision. |
+| [Valheim Server](https://github.com/AlessandroDaudt/valheimserver-docker) | Python · Docker Compose | Dedicated Valheim server with an HTTPS web interface for operation, configuration, user management, backups, players, and audit logs. |
+| [DumpCheck for Windows](https://github.com/AlessandroDaudt/DumpCheckWinDBG) | PowerShell · WinDbg/CDB | PowerShell toolkit for preparing a dump-analysis workstation, capturing and analyzing process dumps, managing WER LocalDumps, and producing reproducible triage reports. |
 
-| Project | The idea behind it |
-| --- | --- |
-| [San Flow](https://github.com/AlessandroDaudt/Dell-PPDM-PowerStore) | A Python/FastAPI control plane for a full SAN workflow: Dell PowerStore LUNs, physical-host presentation, Brocade Fabric OS REST/YANG zoning, and Dell PowerProtect Data Manager policies. It uses a responsive SPA, SQLite audit state, Docker, Ansible, dry-run execution, and guarded progressive changes. |
-| [Defender Graph API Toolkit](https://github.com/AlessandroDaudt/MicrosoftGraphAPI-TroubleshootingTool) | I built this PowerShell GUI to make Microsoft Graph and Defender XDR authentication problems easier to see and explain. It keeps Graph and Defender tokens separate, supports Advanced Hunting and Live Response, and produces sanitized diagnostics. |
-| [Local Code AI](https://github.com/AlessandroDaudt/quantizedLLM) | My take on a local-first coding assistant: FastAPI, REST/SSE, React, VS Code, local RAG, controlled agents, and PowerShell operations — with the code and models staying on the user's machine. |
-| [Autopilot Job Hunt](https://github.com/AlessandroDaudt/buscadorvagas) | A private, local-first workflow for finding and reviewing job opportunities without turning the process into a black box. It combines explainable scoring, Ollama-assisted review, SQLite, and allowlisted connectors. |
-| [TaskFlow CI/CD Lab](https://gitlab.com/daudtalessandro/taskflow-cicd-lab) | A hands-on lab where I connect a TypeScript/React application, an Express REST API, PostgreSQL, Redis workers, Docker, and a complete GitLab CI/CD flow. |
-| [Intelbras Gatehouse](https://github.com/AlessandroDaudt/portaria_condominio) | A Flask application that brings cameras, JSON-RPC gate control, snapshots, event logs, authorization, and local computer vision into one operational interface. |
-| [Valheim Control Plane](https://github.com/AlessandroDaudt/valheimserver-docker) | A web control plane for running a Valheim server without treating Docker Compose like the user interface. It includes HTTPS, a live map, backups, players, users, configuration, and audit logs. |
-| [Kubernetes Test Lab](https://github.com/AlessandroDaudt/lab-k8s) | A compact lab I use to make Kubernetes concepts concrete: a Node.js API, PostgreSQL, Deployments, StatefulSets, probes, persistent storage, and Kustomize. |
-| [DevOps Automation Labs](https://github.com/AlessandroDaudt/devops_automation) | My study fork for testing ideas across Terraform, Ansible, AWS, Azure, GitHub Actions, Kubernetes, Datadog, Python, AI operations, and FinOps. |
-| [ApplyPilot](https://github.com/AlessandroDaudt/ApplyPilot) | An open-source fork I explored to understand a more complex AI-assisted job application workflow, from discovery and tailoring to browser automation. |
-| [Ansible Platform Learning Project](https://github.com/AlessandroDaudt/ansible-scripts) | An explicit Ansible platform example for Debian-family Linux: security baseline, Nginx, a systemd-managed Python app, PostgreSQL, local and production inventories, Molecule, linting, tests, and GitHub Actions. |
-| [Terraform Azure — Hybrid Windows/Linux Lab](https://github.com/AlessandroDaudt/terraform-scripts) | A hub-and-spoke Azure lab with Windows and Linux VMs, VNets, NSGs, peering, Managed Identity, cloud-init, Azure Monitor, optional Bastion/VPN, PowerShell automation, and GitHub Actions validation. |
-| [DumpCheck for Windows](https://github.com/AlessandroDaudt/DumpCheckWinDBG) | A PowerShell toolkit for preparing WinDbg workstations, capturing crash or hang dumps, selecting a running process from a GUI, configuring WER LocalDumps, and producing reproducible, auditable triage reports with explicit safety boundaries. |
+## Infrastructure, platform, and learning labs
+
+| Repository | Primary stack | What it covers |
+| --- | --- | --- |
+| [Ansible Platform Learning Project](https://github.com/AlessandroDaudt/ansible-scripts) | Ansible · Jinja · Python | Explicit Debian-family platform example with a security baseline, Nginx, a systemd-managed Python app, PostgreSQL, inventory examples, Molecule, linting, tests, and GitHub Actions. |
+| [Terraform Azure — Hybrid Windows/Linux Lab](https://github.com/AlessandroDaudt/terraform-scripts) | Terraform · PowerShell · Azure | Hub-and-spoke Azure lab with Windows and Linux VMs, VNets, NSGs, peering, Managed Identity, cloud-init, Azure Monitor, optional VPN/Bastion, and validation workflows. |
+| [Kubernetes Test Lab](https://github.com/AlessandroDaudt/lab-k8s) | Node.js · JavaScript · Kubernetes · PostgreSQL | Hands-on application lab with an Express API, PostgreSQL, Deployment, StatefulSet, probes, persistent storage, and Kustomize. |
+| [DevOps Automation — No Fluff](https://github.com/AlessandroDaudt/devops_automation) | Terraform · Ansible · Docker · Kubernetes · AWS · Azure | Forked course repository containing practical labs for infrastructure, cloud, CI/CD, observability, and FinOps automation. |
+| [TSSCollect](https://github.com/AlessandroDaudt/MS) | PowerShell | Fork containing Windows troubleshooting and log-collection scripts for Microsoft products. Download TSS tooling from the official Microsoft sources linked by the repository. |
+| [DisciplinaSegurancaRedeComputadores](https://github.com/AlessandroDaudt/DisciplinaSegurancaRedeComputadores) | PowerShell · HTML · Python | Computer Network Security course support repository with classroom material, assessments, and practical Windows PowerShell labs. Repository documentation: Portuguese. |
+| [ApplyPilot](https://github.com/AlessandroDaudt/ApplyPilot) | Python | Forked study project for an AI-assisted job-application pipeline covering discovery, scoring, resume tailoring, cover letters, and browser-driven submission. |
+
+## Other public work
+
+[TaskFlow CI/CD Lab](https://gitlab.com/daudtalessandro/taskflow-cicd-lab) is a public GitLab lab connecting a TypeScript/React application, an Express REST API, PostgreSQL, Redis workers, Docker, and a complete GitLab CI/CD workflow.
+
+<details>
+<summary>Public repositories without a README yet</summary>
+
+- [defenderapi](https://github.com/AlessandroDaudt/defenderapi) — Public placeholder with no source files or README yet.
+- [daudtalessandrok8s](https://github.com/AlessandroDaudt/daudtalessandrok8s) — Public placeholder with no source files or README yet.
+
+</details>
 
 ## Tools I reach for
 
-**Build** · Python · PowerShell · TypeScript · JavaScript · React · Node.js · Flask · FastAPI · Express · REST · SSE<br>
-**Ship** · Docker · Docker Compose · Kubernetes · Kustomize · GitHub Actions · GitLab CI/CD<br>
-**Provision** · Terraform · Ansible · AWS · Azure · Helm · Entra ID · FinOps<br>
-**Integrate** · Microsoft Graph · Defender XDR · KQL · Dell PowerStore · PowerProtect Data Manager · Brocade Fabric OS REST/YANG · OpenAPI<br>
-**Operate** · PostgreSQL · SQLite · Redis · Ollama · llama.cpp · RAG · Linux · Nginx · Datadog
+**Build** · Python · PowerShell · TypeScript · JavaScript · React · Node.js · Flask · FastAPI · REST · SSE
 
-**San Flow stack** · Python · FastAPI · Docker · SQLite · Ansible · PowerStore · PPDM · Brocade FOS REST/YANG · OpenAPI
+**Ship** · Docker · Docker Compose · Kubernetes · Kustomize · GitHub Actions · GitLab CI/CD
+
+**Provision** · Terraform · Ansible · AWS · Azure · Helm · Entra ID · FinOps
+
+**Integrate** · Microsoft Graph · Defender XDR · KQL · Dell PowerStore · PowerProtect Data Manager · Brocade Fabric OS REST/YANG · OpenAPI · ComfyUI
+
+**Operate** · PostgreSQL · SQLite · Redis · Ollama · llama.cpp · RAG · Linux · Nginx · Datadog · WinDbg
 
 ## What matters to me
 
-- Automation should still be understandable after the demo is over.
+- Automation should remain understandable after the demo is over.
 - Infrastructure should be testable locally and predictable when it is time to operate it.
 - AI works better with clear boundaries, local processing where possible, and a human making the important decisions.
 - Documentation is part of the project. If someone cannot understand how it works or what can go wrong, it is not finished yet.
 
 ## Let's connect
 
-Take a look at my [repositories](https://github.com/AlessandroDaudt?tab=repositories) if you want to see how these ideas turn into code. You can also find me on [LinkedIn](https://www.linkedin.com/in/alessandrodaudt/).
+Explore my [public repositories](https://github.com/AlessandroDaudt?tab=repositories) or connect with me on [LinkedIn](https://www.linkedin.com/in/alessandrodaudt/).
 
 <div align="center">
 
