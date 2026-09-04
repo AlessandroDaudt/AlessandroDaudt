@@ -18,7 +18,7 @@ I build practical tools for real operational problems — especially the repetit
 [![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)](https://www.ansible.com/)
 
 </div>
----
+
 
 ## About me
 
